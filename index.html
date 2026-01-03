@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Matériaux - Guide Éducatif</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Page de bienvenue -->
+    <section id="welcome" class="welcome-section">
+        <div class="welcome-content">
+            <div class="logo-animation">
+                <i class="fas fa-atom"></i>
+            </div>
+            <h1 class="welcome-title">Les Matériaux</h1>
+            <p class="welcome-subtitle">Découvrez le monde fascinant des matériaux</p>
+            <button class="start-btn" onclick="startExploring()">
+                Commencer l'exploration
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-atom"></i>
+                <span>Les Matériaux</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#metallic">Métalliques</a></li>
+                <li><a href="#organic">Organiques</a></li>
+                <li><a href="#mineral">Minéraux</a></li>
+                <li><a href="#composite">Composites</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenu principal -->
+    <main id="main-content" class="main-content">
+        <!-- Section Matériaux Métalliques -->
+        <section id="metallic" class="material-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="icon-wrapper metallic-color">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h2>Matériaux Métalliques</h2>
+                    <p class="definition">
+                        Les matériaux métalliques sont des substances composées principalement de métaux, 
+                        caractérisés par leur conductivité électrique et thermique, leur malléabilité et leur éclat.
+                    </p>
+                </div>
+                <!-- Radar de Performance -->
+                <div class="performance-section">
+                    <h3 class="subsection-title">
+                        <i class="fas fa-chart-radar"></i>
+                        Radar de Performance
+                    </h3>
+                    <div class="radar-container">
+                        <canvas id="metallicRadar"></canvas>
+                    </div>
+                </div>
+
+                <!-- Domaines d'Application -->
+                <div class="applications-section">
+                    <h3 class="subsection-title">
+                        <i class="fas fa-briefcase"></i>
+                        Domaines d'Application
+                    </h3>
+                    <div class="applications-grid">
+                        <div class="application-item">
+                            <div class="app-icon"><i class="fas fa-building"></i></div>
+                            <span>Construction</span>
+                        </div>
+                        <div class="application-item">
+                            <div class="app-icon"><i class="fas fa-car"></i></div>
+                            <span>Automobile</span>
+                        </div>
+                        <div class="application-item">
+                            <div class="app-icon"><i class="fas fa-plane"></i></div>
+                            <span>Aéronautique</span>
+                        </div>
+                        <div class="application-item">
+                            <div class="app-icon"><i class="fas fa-microchip"></i></div>
+                            <span>Électronique</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="examples-grid">
+                    <div class="example-card">
+                        <div class="card-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3>Acier</h3>
+                        <p>Alliage de fer et carbone, utilisé dans la construction et l'industrie automobile pour sa résistance.</p>
+                    </div>
+                    <div class="example-card">
+                        <div class="card-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <h3>Aluminium</h3>
+                        <p>Métal léger et résistant à la corrosion, idéal pour l'aéronautique et les emballages.</p>
+                    </div>
+                    <div class="example-card">
+                        <div class="card-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Cuivre</h3>
+                        <p>Excellent conducteur électrique utilisé dans les câbles et circuits électroniques.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Matériaux Organiques -->
+        <section id="organic" class="material-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="icon-wrapper organic-color">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h2>Matériaux Organiques</h2>
+                    <p class="definition">
+                        Les matériaux organiques sont composés principalement de carbone et d'hydrogène. 
+                        Ils proviennent d'organismes vivants ou sont synthétisés chimiquement.
+                    </p>
+                </div>
+                <!-- Radar de Performance -->
+                <div class="performance-section">
+                    <h3 class="subsection-title">
+                        <i class="fas fa-chart-radar"></i>
+                        Radar de Performance
+                    </h3>
+                    <div class="radar-container">
+                        <canvas id="organicRadar"></canvas>
+                    </div>
+                </div>
+
+                <!-- Domaines d'Application -->
+                <div class="applications-section">
+                    <h3 class="subsection-title">
+                        <i class="fas fa-briefcase"></i>
+                        Domaines d'Application
+                    </h3>
+                    <div class="applications-grid">
+                        <div class="application-item">
+                            <div class="app-icon"><i class="fas fa-tshirt"></i></div>
+                            <span>Textile</span>
+                        </div>
+                        <div class="application-item">
+                            <div class="app-icon"><i class="fas fa-box"></i></div>
+                            <span>Emballage</span>
+                        </div>
+                        <div class="application-item">
+                            <div class="app-icon"><i class="fas fa-home"></i></div>
+                            <span>Ameublement</span>
+                        </div>
+                        <div class="application-item">
+                            <div class="app-icon"><i class="fas fa-pills"></i></div>
+                            <span>Médical</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="examples-grid">
+                    <div class="example-card">
+                        <div class="card-icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <h3>Bois</h3>
+                        <p>Matériau naturel renouvelable utilisé en construction, menuiserie et ameublement.</p>
+                    </div>
+                    <div class="example-card">
+                        <div class="card-icon">
+                            <i class="fas fa-recycle"></i>
+                        </div>
+                        <h3>Plastiques</h3>
+                        <p>Polymères synthétiques légers et polyvalents, omniprésents dans notre quotidien.</p>
+                    </div>
+                    <div class="example-card">
+                        <div class="card-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h3>Coton</h3>
+                        <p>Fibre naturelle végétale utilisée dans l'industrie textile pour sa douceur et respirabilité.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Matériaux Minéraux -->
+        <section id="mineral" class="material-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="icon-wrapper mineral-color">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h2>Matériaux Minéraux</h2>
+                    <p class="definition">
+                        Les matériaux minéraux sont d'origine naturelle, extraits de la croûte terrestre. 
+                        Ils sont généralement durs, résistants à la chaleur et chimiquement inertes.
+                    </p>
+                </div>
+                <!-- Radar de Performance -->
+                <div class="performance-section">
+                    <h3 class="subsection-title">
+                        <i class="fas fa-chart-radar"></i>
+                        Radar de Performance
+                    </h3>
+                    <div class="radar-container">
+                        <canvas id="mineralRadar"></canvas>
+                    </div>
+                </div>
+
+                <!-- Domaines d'Application -->
+                <div class="applications-section">
+                    <h3 class="subsection-title">
+                        <i class="fas fa-briefcase"></i>
+                        Domaines d'Application
+                    </h3>
+                    <div class="applications-grid">
+                        <div class="application-item">
+                            <div class="app-icon"><i class="fas fa-city"></i></div>
+                            <span>Bâtiment</span>
+                        </div>
+                        <div class="application-item">
+                            <div class="app-icon"><i class="fas fa-wine-glass"></i></div>
+                            <span>Vaisselle</span>
+                        </div>
+                        <div class="application-item">
+                            <div class="app-icon"><i class="fas fa-bridge"></i></div>
+                            <span>Infrastructure</span>
+                        </div>
+                        <div class="application-item">
+                            <div class="app-icon"><i class="fas fa-lightbulb"></i></div>
+                            <span>Optique</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="examples-grid">
+                    <div class="example-card">
+                        <div class="card-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Céramique</h3>
+                        <p>Matériau dur et résistant à haute température, utilisé en construction et électronique.</p>
+                    </div>
+                    <div class="example-card">
+                        <div class="card-icon">
+                            <i class="fas fa-window-maximize"></i>
+                        </div>
+                        <h3>Verre</h3>
+                        <p>Matériau transparent et amorphe obtenu par fusion de silice, utilisé en architecture et optique.</p>
+                    </div>
+                    <div class="example-card">
+                        <div class="card-icon">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                        <h3>Béton</h3>
+                        <p>Mélange de ciment, granulats et eau, fondamental dans la construction moderne.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Matériaux Composites -->
+        <section id="composite" class="material-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="icon-wrapper composite-color">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h2>Matériaux Composites</h2>
+                    <p class="definition">
+                        Les matériaux composites résultent de l'assemblage de deux ou plusieurs matériaux différents, 
+                        combinant leurs propriétés pour créer un matériau aux performances supérieures.
+                    </p>
+                </div>
+                <!-- Radar de Performance -->
+                <div class="performance-section">
+                    <h3 class="subsection-title">
+                        <i class="fas fa-chart-radar"></i>
+                        Radar de Performance
+                    </h3>
+                    <div class="radar-container">
+                        <canvas id="compositeRadar"></canvas>
+                    </div>
+                </div>
+
+                <!-- Domaines d'Application -->
+                <div class="applications-section">
+                    <h3 class="subsection-title">
+                        <i class="fas fa-briefcase"></i>
+                        Domaines d'Application
+                    </h3>
+                    <div class="applications-grid">
+                        <div class="application-item">
+                            <div class="app-icon"><i class="fas fa-space-shuttle"></i></div>
+                            <span>Aérospatial</span>
+                        </div>
+                        <div class="application-item">
+                            <div class="app-icon"><i class="fas fa-running"></i></div>
+                            <span>Sport</span>
+                        </div>
+                        <div class="application-item">
+                            <div class="app-icon"><i class="fas fa-car-side"></i></div>
+                            <span>Automobile</span>
+                        </div>
+                        <div class="application-item">
+                            <div class="app-icon"><i class="fas fa-wind"></i></div>
+                            <span>Énergie</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="examples-grid">
+                    <div class="example-card">
+                        <div class="card-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Fibre de carbone</h3>
+                        <p>Composite ultra-léger et résistant utilisé dans l'aérospatiale et le sport de haut niveau.</p>
+                    </div>
+                    <div class="example-card">
+                        <div class="card-icon">
+                            <i class="fas fa-ship"></i>
+                        </div>
+                        <h3>Fibre de verre</h3>
+                        <p>Composite léger et résistant à la corrosion, idéal pour les coques de bateaux et carrosseries.</p>
+                    </div>
+                    <div class="example-card">
+                        <div class="card-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Béton armé</h3>
+                        <p>Béton renforcé par des barres d'acier, combinant résistance à la compression et à la traction.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-users"></i> Créatrices</h3>
+                    <p>SOULAYMA DHAHBI</p>
+                    <p>SIRINE ELAARBI</p>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-code"></i> Développeur</h3>
+                    <p>Med Aymen Troudi</p>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-info-circle"></i> À propos</h3>
+                    <p>Site éducatif sur les matériaux</p>
+                    <p class="year">© 2024</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
